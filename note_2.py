@@ -61,9 +61,12 @@ you can type comment in here in another way beside #
 
 #except command: really powerful thing protect program from create errors.
 try:
-    value = 10/0
+    answer = 10/0 # this will create error
     number = int(input("enter a number:"))
     print(number)
-except :
+except ZeroDivisionError as err: # store the error as a variable, # we can specify exact type of error
+    print(err)
+except ValueError:
     print("invalid input")
+
 
