@@ -1,0 +1,10 @@
+jim -- salesman
+dwight -- salesman
+pam -- receptionist
+michael-- manager
+oscar--accountant
+
+Toby -- Human resources
+Kelly --customer service
+Toby -- Human resources
+Kelly --customer service
