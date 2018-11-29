@@ -25,9 +25,12 @@ pow(3,2) # or can type 3 **2 means power
 max(4,5)
 min(4,6)
 round(3.7)
-floor(3.6) # returns 3
-ceil(3.7) # returns 4
-sqrt(36)
+
+import math
+
+math.floor(3.6)
+math.ceil(3.6)
+math.sqrt(36)
 
 #input command default will return string, you can convert to float ( number ).
 
@@ -117,20 +120,30 @@ while i <= 10:
 print("Done with loop")
 
 
-#create a guessing game app:
+#create a guessing game app: this is very classic and basic loop
 secret_word = "giraffe"
 guess = ""
 guess_count = 0
-while guess != secret_word:
-    guess = input("Enter guess : ")
-    guess_count += 1
-print ("You win !!")
-print(guess_count)
+guess_limit = 3
+out_of_guesses = False
+while guess != secret_word and not(out_of_guesses):
+    if guess_count < guess_limit:
+        guess = input("Enter guess : ")
+        guess_count += 1
+    else:
+        out_of_guesses = True
+if out_of_guesses:
+    print("you lose, out of guesses!")
+else:
+    print ("You win !!")
+
 
 #while operates when condition is True, and stop operate when the condition meets false.
 
 
-
+#FOR LOOP
+for letter in "giraffe":
+    print(letter)
 
 
 
